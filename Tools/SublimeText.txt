@@ -1,0 +1,14 @@
+Sublime Text 3
+
+
+ctrl-shift-p
+
+Package Control
+https://packagecontrol.io/
+
+Packages:
+SublimeCodeIntel
+git
+
+
+

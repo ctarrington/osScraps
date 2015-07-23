@@ -1,0 +1,9 @@
+The default heap size in IntelliJ is stupidly small.
+This causes all sorts of problems with autocomplete, etc.
+
+Edit /Applications/IntelliJ IDEA 14.app/Contents/bin/idea.vmoptions:
+-Xms3072m
+-Xmx3072m
+-XX:MaxPermSize=350m
+-XX:ReservedCodeCacheSize=225m
+-XX:+UseCompressedOops

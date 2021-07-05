@@ -1,5 +1,5 @@
 # osScraps
 
-Just snipOSpets on how to setup common dev software per OS
+Just bits and pieces on how to setup common dev software per OS
 
 

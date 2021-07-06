@@ -7,15 +7,14 @@ let g:fzf_buffers_jump = 1
 
 let g:ackprg = 'ag --vimgrep'
 
-" better backup, swap and undos storage (taken from fisa-vim-config)
-set directory=~/.vim/dirs/tmp     " directory to place swap files in
-set backup                        " make backup files
-set backupdir=~/.vim/dirs/backups " where to put backup files
-set undofile                      " persistent undos - undo after you re-open the file
+set directory=~/.vim/dirs/tmp
+set backup
+set backupdir=~/.vim/dirs/backups
+set undofile
 set undodir=~/.vim/dirs/undos
 
 set t_Co=256
-color shine 
+color morning 
 syntax on
 
 set number

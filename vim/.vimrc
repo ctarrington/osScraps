@@ -1,4 +1,6 @@
+set nocompatible
 set mouse+=a
+set switchbuf=useopen
 
 " fzf
 let g:fzf_buffers_jump = 1
@@ -11,14 +13,30 @@ set backup                        " make backup files
 set backupdir=~/.vim/dirs/backups " where to put backup files
 set undofile                      " persistent undos - undo after you re-open the file
 set undodir=~/.vim/dirs/undos
-set viminfo+=n~/.vim/dirs/viminfo
 
+set t_Co=256
+color shine 
 syntax on
 
-set nocompatible
 set number
-set hlsearch
-set incsearch                                           " incremental search
+set ruler
+set spell
+set cursorline
+
+set confirm
+set cmdheight=2
+
+set encoding=utf-8
 set backspace=indent,eol,start
-set mouse+=a
-set t_Co=256 
+
+set autoindent
+set expandtab
+set softtabstop=2
+set shiftwidth=2
+
+" Search 
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+:nnoremap <silent><expr> <c-l> (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"

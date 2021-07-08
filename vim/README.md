@@ -1,7 +1,7 @@
 Install The Silver Searcher aka ag
 github.com/ggreer/the_silver_searcher
 
-cd .vim/pack/vendor/start/    
+cd ~/github/osScraps/vim/.vim/pack/vendor/start/    
 git clone https://github.com/junegunn/fzf.git    
 install fzf from the install script   
 git clone https://github.com/junegunn/fzf.vim.git    

@@ -38,3 +38,9 @@ plugins=(
 ssh-add -K ~/.ssh/id_rsa_github
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export NVM_DIR=~/.nvm
+
+if [ "$(uname 2> /dev/null)" != "Linux" ]; then
+  echo "assuming on MacOS"
+  source $(brew --prefix nvm)/nvm.sh
+fi

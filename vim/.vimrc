@@ -1,6 +1,6 @@
 set nocompatible
 set mouse+=a
-set switchbuf=useopen
+set switchbuf=useopen,newtab
 
 filetype plugin indent on
 
@@ -40,7 +40,10 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-:nnoremap <silent><expr> <c-l> (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
+nnoremap <silent><expr> <c-l> (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
+nnoremap n nzz
+nnoremap N Nzz
+
 
 " syntastic
 set statusline+=%#warningmsg#

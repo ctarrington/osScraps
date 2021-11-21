@@ -36,6 +36,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " Search 
+set nowrapscan
 set hlsearch
 set incsearch
 set ignorecase

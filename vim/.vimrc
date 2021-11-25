@@ -61,3 +61,4 @@ let g:rustfmt_autosave = 1
 ab rusttest #[test]<CR>fn test_() {<CR><CR>}<CR>
 
 nnoremap gd :call CocAction('jumpDefinition')<CR>zz
+nnoremap <c-h> :call CocAction('doHover')<CR>

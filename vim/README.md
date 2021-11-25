@@ -11,6 +11,12 @@ git clone https://github.com/vim-syntastic/syntastic
 
 git clone https://github.com/rust-lang/rust.vim     
 
+git clone https://github.com/neoclide/coc.nvim.git --depth=1
+cd coc.nvim    
+npm install   
+npm build   
+
+in vim, install rust-analyzer with :CocInstall coc-rust-analyzer 
 
 cd    
 ln -s github/osScraps/vim/.vimrc .vimrc    

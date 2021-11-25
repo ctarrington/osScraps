@@ -59,4 +59,5 @@ let g:syntastic_check_on_wq = 0
 let g:rustfmt_autosave = 1
 
 ab rusttest #[test]<CR>fn test_() {<CR><CR>}<CR>
-ab rustasserteq assert_eq!( , );
+
+nnoremap gd :call CocAction('jumpDefinition')<CR>zz

@@ -13,7 +13,9 @@ ZSH_THEME="avit"
 HIST_STAMPS="mm/dd/yyyy"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,16 +33,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-plugins=(
-   git
-)
-
-ssh-add -K ~/.ssh/id_rsa_github
-
+export FZF_DEFAULT_COMMAND='ag --nogroup --nocolor --hidden -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export NVM_DIR=~/.nvm
 
 if [ "$(uname 2> /dev/null)" != "Linux" ]; then
   echo "assuming on MacOS"
+  ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+  path+=('/opt/homebrew/bin')
+  export PATH
   source $(brew --prefix nvm)/nvm.sh
 fi

@@ -16,7 +16,7 @@ set undofile
 set undodir=~/.vim/dirs/undos
 
 set t_Co=256
-color morning 
+color darkblue 
 syntax on
 
 set number

@@ -3,6 +3,7 @@ static ip
 https://support.google.com/wifi/answer/6274660?hl=en
 
 ufw rules for 22 and 3000
+https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
 
 sshd with passwords disabled and keys enabled 
 https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-20-04/

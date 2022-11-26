@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ctarrington/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="avit"
 
@@ -30,8 +30,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls='ls --color=never'
+
 
 export FZF_DEFAULT_COMMAND='ag --nogroup --nocolor --hidden -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

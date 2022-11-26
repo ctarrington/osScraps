@@ -44,3 +44,5 @@ if [ "$(uname 2> /dev/null)" != "Linux" ]; then
   export PATH
   source $(brew --prefix nvm)/nvm.sh
 fi
+
+export PKG_CONFIG_PATH=/opt/R/arm64/lib/pkgconfig/

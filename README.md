@@ -9,3 +9,5 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 ## nvm
 https://github.com/nvm-sh/nvm
 
+## python and miniconda
+https://dev.to/waylonwalker/installing-miniconda-on-linux-from-the-command-line-4ad7

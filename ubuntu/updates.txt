@@ -1,0 +1,11 @@
+sudo dpkg --configure -a
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt autoremove
+sudo apt autoclean
+flatpak update
+pop-upgrade recovery upgrade from-release
+
+xset -dpms
+

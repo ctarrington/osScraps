@@ -5,6 +5,7 @@ sudo apt full-upgrade
 sudo apt autoremove
 sudo apt autoclean
 flatpak update
+sudo snap refresh
 pop-upgrade recovery upgrade from-release
 
 xset -dpms

@@ -1,0 +1,17 @@
+ls -al ~/.ssh
+ssh-keygen -t ed25519 -C "arrington.ct@gmail.com"
+ssh-add ~/.ssh/id_ed25519
+
+git config --global user.email "arrington.ct@gmail.com"
+git config --global user.name "CT Arrington"
+
+flatpak --version
+flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install --user flathub io.podman_desktop.PodmanDesktop
+
+dnf copr enable scottames/ghostty
+sudo dnf copr enable scottames/ghostty
+sudo dnf install ghostty
+
+sudo dnf install zsh
+sudo dnf install the_silver_searcher

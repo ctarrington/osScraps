@@ -1,9 +1,13 @@
 Todo
-[ ] base image
-[ ] tools
-[ ] TS support
-[ ] Prettier
-[ ] eslint
+[x] base image
+[x] tools
+[ ] yanky - install through extras, use via leader-p, no config needed
+[ ] TS support - install through extras lang.typescript. takes a beat to load things. no config needed
+[ ] Prettier - install through extras. no config needed. just save a file!
+[ ] eslint - install through extras. no config probably helps?
+[ ] outline - install through extras. enable via command Outline! Really nice navigation
+[ ] treesitter-context. install through extras. worth installing. might leave on.
+[ ] inc-rename install through extras. worth installing. might leave on.
 [ ] Rust support
 [ ] Rustfmt
 what else?

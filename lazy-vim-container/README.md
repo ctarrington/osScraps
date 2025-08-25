@@ -10,17 +10,21 @@
 [ ] treesitter-context. install through extras. worth installing. might leave on.  
 [ ] inc-rename install through extras. worth installing. might leave on.  
 [ ] Rust support
+[ ] Markdown  
 
 ## Install
 
 ```bash
 podman build . -f Dockerfile -t lazyvim-image
-podman run -it -v ~/github/:/github:z lazyvim-image:latest bash
 
-podman run -it -v ~/github/:/github:z --name lazyvim-interactive lazyvim-image:latest bash
+podman run -it -v ~/github/:/code:z --name lazyvim-interactive lazyvim-image:latest bash
 do custom things
-podman commit lazyvim-interactive lazyvim-rc1:tag
+podman commit lazyvim-interactive lazyvim:rc1
 podman images
-podman run -it -v ~/github/:/github:z lazyvim-rc1:tag bash
+
+podman save -o lazyvim-rc1.tar lazyvim:rc1
+podman load --input lazyvim-rc1.tar
+
+podman run -it -v ~/github/:/code:z lazyvim:rc1 bash
 
 ```

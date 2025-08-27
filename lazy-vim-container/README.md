@@ -10,6 +10,8 @@
 [ ] treesitter-context. install through extras. worth installing. might leave on.  
 [ ] inc-rename install through extras. worth installing. might leave on.  
 [ ] Rust support  
+[ ] Java support  
+[ ] Python support  
 [ ] Markdown  
 [ ] git support. Add to dockerfile git config --global --add safe.directory /code
 

@@ -9,8 +9,9 @@
 [ ] outline - install through extras. enable via command Outline! Really nice navigation  
 [ ] treesitter-context. install through extras. worth installing. might leave on.  
 [ ] inc-rename install through extras. worth installing. might leave on.  
-[ ] Rust support
+[ ] Rust support  
 [ ] Markdown  
+[ ] git support. Add to dockerfile git config --global --add safe.directory /code
 
 ## Install
 
